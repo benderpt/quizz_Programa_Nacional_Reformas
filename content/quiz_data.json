@@ -1,0 +1,35 @@
+[
+    {
+        "question": "Quem é responsável por elaborar as análises das políticas orçamentais e estruturais na fase preparatória do Semestre Europeu?",
+        "explanation": "Durante esta fase inicial, é crucial analisar as políticas financeiras e estruturais dos Estados-Membros, um processo essencial para assegurar a estabilidade econômica e o crescimento sustentável na União Europeia.",
+        "hint": "Esta entidade da UE desempenha um papel central na promoção do interesse geral da União, assegurando a aplicação das políticas de uma maneira que beneficie todos os membros.",
+        "image_path": "content/Assets/pergunta1.png",
+        "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
+        "answer": "Comissão Europeia"
+    },
+    {
+        "question": "Na primeira fase do Semestre Europeu, quem emite as orientações políticas para o Programa Nacional de Reforma?",
+        "explanation": "Esta etapa estabelece as prioridades e direções gerais de política que os Estados-Membros devem seguir em seus programas nacionais, orientando-os no caminho para reformas estruturais eficazes e políticas orçamentais responsáveis.",
+        "hint": "Este órgão da UE, com a tarefa de orientar os Estados-Membros, é fundamental para estabelecer as bases para o crescimento e a estabilidade econômica na União.",
+        "image_path": "content/Assets/pergunta2.png",
+        "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
+        "answer": "Comissão Europeia"
+    },
+    {
+        "question": "Quem é responsável por aprovar a versão final das recomendações específicas por país na segunda fase do Semestre Europeu?",
+        "explanation": "Após a elaboração e análise minuciosa das recomendações, este órgão específico dá a aprovação final, assegurando que as diretrizes sejam adaptadas para atender às necessidades específicas de cada Estado-Membro, promovendo o crescimento e a estabilidade em toda a União.",
+        "hint": "Este órgão, distinto da entidade responsável pela elaboração das recomendações, desempenha um papel decisivo na aprovação das orientações políticas e estratégicas para os Estados-Membros.",
+        "image_path": "content/Assets/pergunta3.png",
+        "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
+        "answer": "Conselho Europeu"
+    },
+    {
+        "question": "Na terceira fase do Semestre Europeu, quem fica encarregado de implementar as recomendações específicas para cada país?",
+        "explanation": "Concluída a aprovação das recomendações, cabe a este agente garantir que sejam efetivamente implementadas, adaptando as diretrizes às condições locais e aos contextos específicos, para promover reformas estruturais e orçamentais alinhadas com as metas da União.",
+        "hint": "Esta entidade é responsável pela aplicação prática das recomendações, ajustando-as conforme necessário para refletir as particularidades e os desafios únicos que enfrenta.",
+        "image_path": "content/Assets/pergunta4.png",
+        "options": ["Comissão Europeia", "Cada Estado-Membro", "Conselho Europeu", "Parlamento Europeu"],
+        "answer": "Cada Estado-Membro"
+    }
+]
+
