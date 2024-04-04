@@ -70,7 +70,7 @@ if not st.session_state.quiz_finalizado:
     st.subheader(f"{item_pergunta['question']}")
 
     stoggle(
-    "Pista",
+    "Ajuda",
     f"""{dados_quiz[st.session_state.current_index]['hint']}""",
 )
 

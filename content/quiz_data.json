@@ -1,8 +1,8 @@
 [
     {
         "question": "Quem é responsável por elaborar as análises das políticas orçamentais e estruturais na fase preparatória do Semestre Europeu?",
-        "explanation": "Durante esta fase inicial, é crucial analisar as políticas financeiras e estruturais dos Estados-Membros, um processo essencial para assegurar a estabilidade econômica e o crescimento sustentável na União Europeia.",
-        "hint": "Esta entidade da UE desempenha um papel central na promoção do interesse geral da União, assegurando a aplicação das políticas de uma maneira que beneficie todos os membros.",
+        "explanation": "A Comissão Europeia é responsável por elaborar as análises das políticas orçamentais e estruturais na fase preparatória do Semestre Europeu devido à sua expertise técnica, capacidade de promover a estabilidade económica e o crescimento sustentável, função de assegurar a conformidade com as regras da UE, habilidade em identificar desafios comuns e promover a partilha de melhores práticas, seu papel no fomento do diálogo construtivo entre os Estados-membros e a sua missão de garantir a responsabilidade e a transparência nas políticas económicas dos Estados-membros.",
+        "hint": "Este órgão tem o privilégio único de iniciar legislação e assegurar que as metas económicas e orçamentais dos membros estejam em sintonia com os objetivos mais amplos da união. ",
         "image_path": "content/Assets/pergunta1.png",
         "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
         "answer": "Comissão Europeia"
