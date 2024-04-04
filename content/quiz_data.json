@@ -9,24 +9,24 @@
     },
     {
         "question": "Na primeira fase do Semestre Europeu, quem emite as orientações políticas para o Programa Nacional de Reforma?",
-        "explanation": "Esta etapa estabelece as prioridades e direções gerais de política que os Estados-Membros devem seguir em seus programas nacionais, orientando-os no caminho para reformas estruturais eficazes e políticas orçamentais responsáveis.",
-        "hint": "Este órgão da UE, com a tarefa de orientar os Estados-Membros, é fundamental para estabelecer as bases para o crescimento e a estabilidade econômica na União.",
+        "explanation": "Entre janeiro e abril, durante a primeira fase do Semestre Europeu, o Parlamento Europeu analisa e dá parecer sobre as orientações propostas, culminando com o Conselho Europeu que, aproveitando a sua posição estratégica como a entidade que congrega os líderes dos Estados-membros, emite as orientações políticas finais que vão direcionar a formulação dos Programas Nacionais de Reforma, garantindo assim que as políticas nacionais estejam alinhadas com as prioridades acordadas a nível da UE.",
+        "hint": "Este órgão reúne os líderes dos Estados-membros da União Europeia, incluindo Presidentes e Primeiros-Ministros, sob a liderança de uma figura permanente que representa a união a nível internacional sem deter poderes de decisão nacional. ",
         "image_path": "content/Assets/pergunta2.png",
-        "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
-        "answer": "Comissão Europeia"
-    },
-    {
-        "question": "Quem é responsável por aprovar a versão final das recomendações específicas por país na segunda fase do Semestre Europeu?",
-        "explanation": "Após a elaboração e análise minuciosa das recomendações, este órgão específico dá a aprovação final, assegurando que as diretrizes sejam adaptadas para atender às necessidades específicas de cada Estado-Membro, promovendo o crescimento e a estabilidade em toda a União.",
-        "hint": "Este órgão, distinto da entidade responsável pela elaboração das recomendações, desempenha um papel decisivo na aprovação das orientações políticas e estratégicas para os Estados-Membros.",
-        "image_path": "content/Assets/pergunta3.png",
         "options": ["Comissão Europeia", "Conselho Europeu", "Parlamento Europeu", "Cada Estado-Membro"],
         "answer": "Conselho Europeu"
     },
     {
+        "question": "Quem é responsável por aprovar a versão final das recomendações específicas por país na segunda fase do Semestre Europeu?",
+        "explanation": "A segunda fase do Semestre Europeu, que se desenrola de abril a julho, envolve a elaboração de objetivos, políticas e planos específicos por cada Estado-membro. Em maio, a Comissão Europeia elabora recomendações específicas para cada país, baseadas na análise dos planos submetidos. Em junho, o Conselho da UE, que é composto pelos ministros dos Estados-membros, responsáveis pelas áreas de política abrangidas pelas recomendações, aprova a versão final dessas recomendações. Posteriormente, em julho, o Conselho Europeu, que reúne os Chefes de Estado ou de Governo, homologa essas recomendações. Finalmente, o Conselho da UE adota formalmente as recomendações, dando a cada país orientações claras sobre as reformas económicas e orçamentais a serem implementadas.",
+        "hint": "Este órgão da União Europeia, composto por ministros de cada Estado-membro, é a principal instância de decisão que, após o trabalho preparatório da Comissão, se reúne para aprovar formalmente uma variedade de políticas e leis da UE.",
+        "image_path": "content/Assets/pergunta3.png",
+        "options": ["Comissão Europeia", "Conselho Europeu", "Conselho da União Europeia", "Cada Estado-Membro"],
+        "answer": "Conselho da União Europeia"
+    },
+    {
         "question": "Na terceira fase do Semestre Europeu, quem fica encarregado de implementar as recomendações específicas para cada país?",
-        "explanation": "Concluída a aprovação das recomendações, cabe a este agente garantir que sejam efetivamente implementadas, adaptando as diretrizes às condições locais e aos contextos específicos, para promover reformas estruturais e orçamentais alinhadas com as metas da União.",
-        "hint": "Esta entidade é responsável pela aplicação prática das recomendações, ajustando-as conforme necessário para refletir as particularidades e os desafios únicos que enfrenta.",
+        "explanation": "Na terceira fase do Semestre Europeu, após a adoção das recomendações pelo Conselho da UE em julho, são os próprios Estados-Membros que ficam encarregados de implementar as recomendações específicas. Cada país deve considerar estas recomendações no processo de decisão nacional sobre o respetivo orçamento para o ano seguinte, integrando-as nas suas políticas e medidas económicas, com o objetivo de alcançar um crescimento sustentável e cumprir com os compromissos europeus.",
+        "hint": "Nesta fase a Comissão Europeia não fica encarregue de implementar as recomendações.",
         "image_path": "content/Assets/pergunta4.png",
         "options": ["Comissão Europeia", "Cada Estado-Membro", "Conselho Europeu", "Parlamento Europeu"],
         "answer": "Cada Estado-Membro"
