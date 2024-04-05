@@ -5,7 +5,7 @@ from streamlit_extras.stoggle import stoggle
 def run():
     st.set_page_config(
         page_title="Quizz Programa Nacional de Reformas",
-        page_icon="❓",
+        page_icon="🇪🇺",
     )
 
 if __name__ == "__main__":
@@ -70,9 +70,9 @@ if not st.session_state.quiz_finalizado:
     st.subheader(f"{item_pergunta['question']}")
 
     stoggle(
-    "Ajuda",
+    "🔎 Pista",
     f"""{dados_quiz[st.session_state.current_index]['hint']}""",
-)
+    )
 
     st.markdown(""" ___""")
 
@@ -94,6 +94,7 @@ if st.session_state.answer_submitted:
     <div style="background-color: {cor_fundo}; border-radius: 10px; padding: 20px; text-align: center;">
         <h3>{mensagem}</h3>
         <p>{item_pergunta['explanation']}</p>
+        <h5>Veja como funciona na imagem</h5>
     </div>
     """, unsafe_allow_html=True)
     st.markdown(""" ___""")
@@ -119,7 +120,7 @@ if st.session_state.answer_submitted:
         st.markdown(f"""
         <div style="background-color: #f0f2f6; border-radius: 10px; padding: 20px; text-align: center;">
             <h1>Quiz Concluído!</h1>
-            <h2>Sua pontuação é: <span style="color: #333;">{st.session_state.score} / {len(dados_quiz) * 10}</span></h2>
+            <h2>Obteve <span style="color: #333;">{st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</span></h2>
         </div>
         """, unsafe_allow_html=True)
 
