@@ -119,8 +119,8 @@ if st.session_state.answer_submitted:
         # Cria um bloco de Markdown para exibir a pontuação com estilo
         st.markdown(f"""
         <div style="border: 10px solid #78909C; border-radius: 10px; padding: 20px; text-align: center;">
-            <h1>Quiz Concluído!</h1>
-            <h4>🥳🥳Obteve {st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis🥳🥳</span></h4>
+            <h1>🥳Quiz Concluído!🥳</h1>
+            <h4>Obteve {st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</span></h4>
         </div>
         """, unsafe_allow_html=True)
 
