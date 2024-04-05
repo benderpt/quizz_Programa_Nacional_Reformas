@@ -69,13 +69,6 @@ if not st.session_state.quiz_finalizado:
     item_pergunta = dados_quiz[st.session_state.current_index]
     st.subheader(f"{item_pergunta['question']}")
 
-    stoggle(
-    "🔎 Pista",
-    f"""{dados_quiz[st.session_state.current_index]['hint']}""",
-    )
-
-    st.markdown(""" ___""")
-
     # Seleção de resposta
     opcoes = item_pergunta['options']
     resposta_correta = item_pergunta['answer']
@@ -84,14 +77,14 @@ if st.session_state.answer_submitted:
     # Define a mensagem e a cor do fundo com base na corretude da resposta
     if st.session_state.selected_option == dados_quiz[st.session_state.current_index]['answer']:
         mensagem = "Correto!"
-        cor_fundo = "#D4EDDA"  # Uma cor de fundo suave para resposta correta, por exemplo, verde claro
+        cor_borda = "#3CB371"  # Uma cor de fundo suave para resposta correta, por exemplo, verde claro
     else:
         mensagem = "Incorreto"
-        cor_fundo = "#f0f2f6"  # Uma cor de fundo suave para resposta incorreta, por exemplo, vermelho claro
+        cor_borda = "#78909C"  # Uma cor de fundo suave para resposta incorreta, por exemplo, vermelho claro
 
     # Renderiza o feedback com as    variáveis definidas acima
     st.markdown(f"""
-    <div style="background-color: {cor_fundo}; border-radius: 10px; padding: 20px; text-align: center;">
+    <div style="border: 10px solid {cor_borda}; border-radius: 10px; padding: 20px; text-align: center; ">
         <h3>{mensagem}</h3>
         <p>{item_pergunta['explanation']}</p>
         <h5>Veja como funciona na imagem</h5>
@@ -100,10 +93,17 @@ if st.session_state.answer_submitted:
     st.markdown(""" ___""")
     st.image(dados_quiz[st.session_state.current_index]['image_path'], use_column_width=True)
 else:
+    stoggle(
+            "🔎 Pista",
+            f"""{dados_quiz[st.session_state.current_index]['hint']}""",
+        )
+    st.markdown(""" ___""")
     # Renderiza os botões para seleção de opção
     for i, opcao in enumerate(opcoes):
+        
         if st.button(opcao, key=i, use_container_width=True):
             st.session_state.selected_option = opcao
+        
 
 st.markdown(""" ___""")
 
@@ -118,9 +118,9 @@ if st.session_state.answer_submitted:
 
         # Cria um bloco de Markdown para exibir a pontuação com estilo
         st.markdown(f"""
-        <div style="background-color: #f0f2f6; border-radius: 10px; padding: 20px; text-align: center;">
+        <div style="border: 10px solid #f0f2f6; border-radius: 10px; padding: 20px; text-align: center;">
             <h1>Quiz Concluído!</h1>
-            <h2>Obteve <span style="color: #333;">{st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</span></h2>
+            <h2>Obteve {st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</span></h2>
         </div>
         """, unsafe_allow_html=True)
 
