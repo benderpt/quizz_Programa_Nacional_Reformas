@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from streamlit_extras.stoggle import stoggle
+import os
 
 def run():
     st.set_page_config(
@@ -75,23 +76,31 @@ if not st.session_state.quiz_finalizado:
 
 if st.session_state.answer_submitted:
     # Define a mensagem e a cor do fundo com base na corretude da resposta
-    if st.session_state.selected_option == dados_quiz[st.session_state.current_index]['answer']:
-        mensagem = "Correto!"
-        cor_borda = "#3CB371"  # Uma cor de fundo suave para resposta correta, por exemplo, verde claro
-    else:
-        mensagem = "Incorreto"
-        cor_borda = "#78909C"  # Uma cor de fundo suave para resposta incorreta, por exemplo, vermelho claro
+    if st.session_state.answer_submitted:
+        # Assume que dados_quiz e item_pergunta estão definidos anteriormente no código
+        item_pergunta = dados_quiz[st.session_state.current_index]
+        caminho_imagem = item_pergunta.get('image_path', '')
 
-    # Renderiza o feedback com as    variáveis definidas acima
-    st.markdown(f"""
-    <div style="border: 10px solid {cor_borda}; border-radius: 10px; padding: 20px; text-align: center; ">
-        <h3>{mensagem}</h3>
-        <p>{item_pergunta['explanation']}</p>
-        <h5>Veja como funciona na imagem</h5>
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown(""" ___""")
-    st.image(dados_quiz[st.session_state.current_index]['image_path'], use_column_width=True)
+        # Define a mensagem e a cor do fundo com base na corretude da resposta
+        if st.session_state.selected_option == item_pergunta['answer']:
+            mensagem = "Correto!"
+            cor_borda = "#3CB371"  # Uma cor de fundo suave para resposta correta, por exemplo, verde claro
+        else:
+            mensagem = f"Errado. A resposta certa é {item_pergunta['answer']}"
+            cor_borda = "#FFCDD2"  # Uma cor de fundo suave para resposta incorreta, por exemplo, vermelho claro
+
+        # Renderiza o feedback
+        st.markdown(f"""
+        <div style="border: 10px solid {cor_borda}; border-radius: 10px; padding: 20px; text-align: center;">
+            <h3>{mensagem}</h3>
+            <p>{item_pergunta['explanation']}</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Verifica se o caminho da imagem existe e, se sim, mostra a imagem
+        if caminho_imagem and os.path.isfile(caminho_imagem):
+            st.markdown("___")
+            st.image(caminho_imagem, use_column_width=True)
 else:
     stoggle(
             "🔎 Pista",
@@ -108,27 +117,37 @@ else:
 st.markdown(""" ___""")
 
 
+# Função que atualiza o estado para mostrar o resultado
+def mostrar_resultado():
+    st.session_state.mostrar_resultado = True
+
 # Botão de submissão e lógica de resposta
 if st.session_state.answer_submitted:
     if st.session_state.current_index < len(dados_quiz) - 1:
         st.button('Próxima', on_click=proxima_pergunta)
     else:
-        # Atualiza o estado para finalizado
-        st.session_state.quiz_finalizado = True
+        # Se o quiz terminou, mas o resultado ainda não foi pedido para ser mostrado
+        if not st.session_state.get('quiz_finalizado', False):
+            # Botão que altera o estado para mostrar o resultado quando clicado
+            if st.button('Mostrar Resultado', on_click=mostrar_resultado):
+                # Atualiza o estado para finalizado
+                st.session_state.quiz_finalizado = True
 
-        # Cria um bloco de Markdown para exibir a pontuação com estilo
-        st.markdown(f"""
-        <div style="border: 10px solid #78909C; border-radius: 10px; padding: 20px; text-align: center;">
-            <h1>🥳Quiz Concluído!🥳</h1>
-            <h4>Obteve {st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</span></h4>
-        </div>
-        """, unsafe_allow_html=True)
+        # Se o resultado deve ser mostrado
+        if st.session_state.get('mostrar_resultado', False):
+            # Cria um bloco de Markdown para exibir a pontuação com estilo
+            st.markdown(f"""
+            <div style="border: 10px solid #78909C; border-radius: 10px; padding: 20px; text-align: center;">
+                <h1>🥳 Quiz Concluído! 🥳</h1>
+                <h4>Obteve {st.session_state.score} pontos em {len(dados_quiz) * 10} pontos possíveis</h4>
+            </div>
+            """, unsafe_allow_html=True)
 
-        st.markdown(""" ___""")
+            st.markdown(""" ___""")
 
-        # Botão de reiniciar
-        if st.button('Reiniciar', on_click=reiniciar_quiz):
-            pass
+            # Botão de reiniciar
+            if st.button('Reiniciar', on_click=reiniciar_quiz):
+                pass
 
 else:
     if st.session_state.current_index < len(dados_quiz):

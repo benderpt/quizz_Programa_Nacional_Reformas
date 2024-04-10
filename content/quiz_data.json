@@ -1,6 +1,6 @@
 [
     {
-        "question": "Quem é responsável por elaborar as análises das políticas orçamentais e estruturais na fase preparatória do Semestre Europeu?",
+        "question": "Quem elabora as análises das políticas orçamentais e estruturais no contexto do Semestre Europeu?",
         "explanation": "A Comissão Europeia é responsável por elaborar as análises das políticas orçamentais e estruturais na fase preparatória do Semestre Europeu devido à sua expertise técnica, capacidade de promover a estabilidade económica e o crescimento sustentável, função de assegurar a conformidade com as regras da UE, habilidade em identificar desafios comuns e promover a partilha de melhores práticas, seu papel no fomento do diálogo construtivo entre os Estados-membros e a sua missão de garantir a responsabilidade e a transparência nas políticas económicas dos Estados-membros.",
         "hint": "Este órgão tem o privilégio único de iniciar legislação e assegurar que as metas económicas e orçamentais dos membros estejam em sintonia com os objetivos mais amplos da união. ",
         "image_path": "content/Assets/pergunta1.png",
@@ -8,7 +8,7 @@
         "answer": "Comissão Europeia"
     },
     {
-        "question": "Na primeira fase do Semestre Europeu, quem emite as orientações políticas para o Programa Nacional de Reforma?",
+        "question": "Quem emite as orientações políticas para o Programa Nacional de Reforma?",
         "explanation": "Entre janeiro e abril, durante a primeira fase do Semestre Europeu, o Parlamento Europeu analisa e dá parecer sobre as orientações propostas, culminando com o Conselho Europeu que, aproveitando a sua posição estratégica como a entidade que congrega os líderes dos Estados-membros, emite as orientações políticas finais que vão direcionar a formulação dos Programas Nacionais de Reforma, garantindo assim que as políticas nacionais estejam alinhadas com as prioridades acordadas a nível da UE.",
         "hint": "Este órgão reúne os líderes dos Estados-membros da União Europeia, incluindo Presidentes e Primeiros-Ministros, sob a liderança de uma figura permanente que representa a união a nível internacional sem deter poderes de decisão nacional. ",
         "image_path": "content/Assets/pergunta2.png",
@@ -16,7 +16,7 @@
         "answer": "Conselho Europeu"
     },
     {
-        "question": "Quem é responsável por aprovar a versão final das recomendações específicas por país na segunda fase do Semestre Europeu?",
+        "question": "Quem aprova a versão final das recomendações específicas por país?",
         "explanation": "A segunda fase do Semestre Europeu, que se desenrola de abril a julho, envolve a elaboração de objetivos, políticas e planos específicos por cada Estado-membro. Em maio, a Comissão Europeia elabora recomendações específicas para cada país, baseadas na análise dos planos submetidos. Em junho, o Conselho da UE, que é composto pelos ministros dos Estados-membros, responsáveis pelas áreas de política abrangidas pelas recomendações, aprova a versão final dessas recomendações. Posteriormente, em julho, o Conselho Europeu, que reúne os Chefes de Estado ou de Governo, homologa essas recomendações. Finalmente, o Conselho da UE adota formalmente as recomendações, dando a cada país orientações claras sobre as reformas económicas e orçamentais a serem implementadas.",
         "hint": "Este órgão da União Europeia, composto por ministros de cada Estado-membro, é a principal instância de decisão que, após o trabalho preparatório da Comissão, se reúne para aprovar formalmente uma variedade de políticas e leis da UE.",
         "image_path": "content/Assets/pergunta3.png",
@@ -24,12 +24,24 @@
         "answer": "Conselho da União Europeia"
     },
     {
-        "question": "Na terceira fase do Semestre Europeu, quem fica encarregado de implementar as recomendações específicas para cada país?",
+        "question": "Quem fica encarregado de implementar as recomendações específicas para cada país?",
         "explanation": "Na terceira fase do Semestre Europeu, após a adoção das recomendações pelo Conselho da UE em julho, são os próprios Estados-Membros que ficam encarregados de implementar as recomendações específicas. Cada país deve considerar estas recomendações no processo de decisão nacional sobre o respetivo orçamento para o ano seguinte, integrando-as nas suas políticas e medidas económicas, com o objetivo de alcançar um crescimento sustentável e cumprir com os compromissos europeus.",
         "hint": "Nesta fase a Comissão Europeia não fica encarregue de implementar as recomendações.",
         "image_path": "content/Assets/pergunta4.png",
         "options": ["Comissão Europeia", "Cada Estado-Membro", "Conselho Europeu", "Parlamento Europeu"],
         "answer": "Cada Estado-Membro"
+    },
+    {
+        "question": "Que documento estratégico substituirá o Programa Nacional de Reforma (PNR) e o Programa de Estabilidade na próxima fase de planeamento fiscal e reformas estruturais?",
+        "explanation": "A União Europeia está a caminho de uma reformulação nas suas diretrizes económicas com a fusão do Programa Nacional de Reforma e o Programa de Estabilidade. Este novo documento visa criar um quadro integrado que reflete as políticas orçamentais e estruturais mais coesas e alinhadas com os objetivos de crescimento sustentável e estabilidade económica da UE.",
+        "hint": "O novo plano é o resultado da fusão de dois documentos pré-existentes e pretende consolidar as diretrizes para as políticas orçamentais e reformas estruturais dos Estados-membros.",
+        "options": [
+            "Plano Orçamental-Estrutural",
+            "Programa de Consolidação Fiscal",
+            "Estratégia de Crescimento a Longo Prazo",
+            "Diretrizes Económicas Integradas"
+        ],
+        "answer": "Plano Orçamental-Estrutural"
     }
 ]
 
