@@ -79,7 +79,8 @@ if st.session_state.answer_submitted:
     if st.session_state.answer_submitted:
         # Assume que dados_quiz e item_pergunta estão definidos anteriormente no código
         item_pergunta = dados_quiz[st.session_state.current_index]
-        caminho_imagem = item_pergunta.get('image_path', '')
+        caminho_imagem = item_pergunta.get('image_path',  '')
+        caminho_caption = item_pergunta.get('caption')
 
         # Define a mensagem e a cor do fundo com base na corretude da resposta
         if st.session_state.selected_option == item_pergunta['answer']:
@@ -100,7 +101,8 @@ if st.session_state.answer_submitted:
         # Verifica se o caminho da imagem existe e, se sim, mostra a imagem
         if caminho_imagem and os.path.isfile(caminho_imagem):
             st.markdown("___")
-            st.image(caminho_imagem, use_column_width=True)
+            st.image(caminho_imagem, caption=caminho_caption, use_column_width=True)
+
 else:
     stoggle(
             "🔎 Pista",
