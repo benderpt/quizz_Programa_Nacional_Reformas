@@ -12,6 +12,16 @@ def run():
 if __name__ == "__main__":
     run()
 
+
+user_theme_choice = st.selectbox('Escolha o tema:', ['light', 'dark'])
+
+if user_theme_choice == 'dark':
+    st.write('Tema escuro selecionado')
+    # Aqui aplicarias as configurações para o tema escuro
+else:
+    st.write('Tema claro selecionado')
+    # Aqui manténs ou aplicas as configurações para o tema claro
+
 # CSS personalizado para os botões
 st.markdown("""
 <style>
