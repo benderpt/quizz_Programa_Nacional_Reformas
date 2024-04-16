@@ -1,0 +1,8 @@
+[theme]
+base="light"
+primaryColor="#0e2a49"
+textColor="#0e2a49"
+
+[theme]
+base="dark"
+primaryColor="#7c9ac0"
