@@ -155,6 +155,9 @@ if st.session_state.answer_submitted:
             if st.button('Reiniciar', on_click=reiniciar_quiz):
                 pass
 
+            st.markdown(""" ___""")
+            st.subheader("Se quiser acompanhar o progresso do Programa Nacional de Reformas, clique [aqui](https://www.portugal.gov.pt/pt/gc21/comunicacao/documento?i=programa-nacional-de-reformas-2021-2023), ou subscreva a nossa newsletter [aqui](https://planapp.gov.pt/)")
+
 else:
     if st.session_state.current_index < len(dados_quiz):
         st.button('Submeter', on_click=submeter_resposta)
