@@ -18,6 +18,7 @@ st.markdown("""
 div.stButton > button:first-child {
     display: block;
     margin: 0 auto;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -55,7 +56,10 @@ def proxima_pergunta():
     st.session_state.answer_submitted = False
 
 # Título e descrição
-st.subheader("Quizz Programa Nacional de Reformas")
+
+st.markdown('<h1 style="color: #0e2a49; text-align: center;">Programa Nacional de Reformas</h1>', unsafe_allow_html=True)
+st.markdown('<h2 style="color: #0e2a49; text-align: center;">Quizz</h2>', unsafe_allow_html=True)
+
 
 
 if not st.session_state.quiz_finalizado:
