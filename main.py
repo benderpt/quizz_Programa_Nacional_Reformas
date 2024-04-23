@@ -151,12 +151,12 @@ if st.session_state.answer_submitted:
 
             st.markdown(""" ___""")
 
+            st.text("Acompanhe o trabalho do PlanAPP em [diferentes plataformas](https://linktr.ee/planapp).")
+
+            st.markdown(""" ___""")
             # Botão de reiniciar
             if st.button('Reiniciar', on_click=reiniciar_quiz):
                 pass
-
-            st.markdown(""" ___""")
-            st.subheader("Acompanhe o trabalho do PlanAPP em [diferentes plataformas](https://linktr.ee/planapp).")
 
 else:
     if st.session_state.current_index < len(dados_quiz):
