@@ -151,7 +151,12 @@ if st.session_state.answer_submitted:
 
             st.markdown(""" ___""")
 
-            st.write("Acompanhe o trabalho do PlanAPP em [diferentes plataformas](https://linktr.ee/planapp).")
+            # HTML com estilo inline para centrar texto com um link
+            centred_link_text = """
+            <div style='text-align: center'>
+                <p>Acompanhe o trabalho do PlanAPP em <a href='https://linktr.ee/planapp' target='_blank'>diferentes plataformas</a>.</p>
+            </div>
+            """
 
             # Botão de reiniciar
             if st.button('Reiniciar', on_click=reiniciar_quiz):
